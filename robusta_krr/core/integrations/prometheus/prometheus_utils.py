@@ -30,6 +30,7 @@ def generate_prometheus_config(
         "url": url,
         "disable_ssl": not settings.prometheus_ssl_enabled,
         "headers": headers,
+        "client_cert": metrics_service.client_cert,
     }
 
     # aws config
